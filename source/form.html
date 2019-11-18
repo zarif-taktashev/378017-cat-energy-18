@@ -6,12 +6,12 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
+      <a class="page-header__logo">
         <img src="" alt="logo-img" class="page-header__logo-image" width="33" height="38">
+        <img src="" alt="logo-img" class="page-header__cat-logo-image" width="33" height="38">
       </a>
-      <h2 class="page-header__logo-header">CAT ENERGY</h2>
       <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--activ">
@@ -35,7 +35,9 @@
     </header>
     <footer class="page-footer">
       <div class="page-footer__contacts contacts">
-        <img src="" alt="лого" class="contacts__img">
+        <a href="#" class="page-footer__logo">
+          <img src="" alt="лого" class="contacts__img">
+        </a>
         <ul class="page-footer__socials-list">
           <li class="page-footer__socials-item">
             <a href="#" arial-label="ВК" class="page-footer__socials-link"></a>
@@ -47,7 +49,7 @@
             <a href="#" arial-label="Фейсбук" class="page-footer__socials-link"></a>
           </li>
         </ul>
-        <a href="#" class="page-footer__copyright">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__copyright">HTML Academy</a>
       </div>
     </footer>
   </body>
