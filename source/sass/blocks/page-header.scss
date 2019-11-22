@@ -1,0 +1,35 @@
+.page-header {
+  color: #ffffff;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0 auto;
+}
+
+.page-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.page-header__nav {
+  background-color: #64a83b;
+}
+
+.page-header__toggle {
+  display: none;
+}
+
+.page-header__list {
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #ffffff;
+  background-color: #64a83b;
+}
+
+.page-header__link {
+  color: #ffffff;
+}
