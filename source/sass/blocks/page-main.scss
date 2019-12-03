@@ -4,14 +4,17 @@
 }
 
 .page-main__slogan {
-  font-size: 60px;
-  line-height: 60px;
+  font-size: 36px;
+  line-height: 36px;
   font-weight: 400;
+  color: #ffffff;
+  margin-top: 2px;
 }
 
 .page-main__intro {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
   font-weight: 400;
 }
 
@@ -21,4 +24,24 @@
   font-weight: 400;
   background-color: #64a83b;
   color: #ffffff;
+}
+
+.page-main__slogan-wrapper {
+  background-color: #64a83b;
+  min-height: 480px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .page-main__slogan-wrapper {
+    min-height: 870px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-main__slogan-wrapper {
+    min-height: 590px;
+    text-align: left;
+  }
 }

@@ -12,12 +12,22 @@
   justify-content: space-between;
 }
 
+.page-header__logo {
+  display: block;
+  height: 70px;
+}
+
 .page-header__nav {
   background-color: #64a83b;
+  flex-grow: 1;
 }
 
 .page-header__toggle {
   display: none;
+}
+
+.page-header__menu-wrapper {
+  min-width: 280px;
 }
 
 .page-header__list {
@@ -26,10 +36,18 @@
   margin: 0;
   padding: 0;
   display: flex;
+  text-align: center;
+  flex-direction: column;
   color: #ffffff;
   background-color: #64a83b;
 }
 
 .page-header__link {
   color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .page-header__list {
+    flex-direction: row;
+  }
 }

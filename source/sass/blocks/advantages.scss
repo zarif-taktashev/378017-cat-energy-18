@@ -14,14 +14,37 @@
 
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
 
 .advantages__item {
-  width: 245px;
+  width: 100%;
+  min-height: 60px;
 
-  &:not(:last-child) {
-    margin-right: 80px;
+  // &:not(:last-child) {
+  //   margin-right: 80px;
+  // }
+}
+
+@media (min-width: 768px) {
+  .advantages__list {
+    justify-content: space-between;
+  }
+
+  .advantages__item {
+    width: 50%;
+    min-height: 180px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .advantages__item {
+    width: 245px;
+
+    &:not(:last-child) {
+      margin-right: 80px;
+    }
   }
 }

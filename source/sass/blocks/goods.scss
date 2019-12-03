@@ -28,3 +28,15 @@
   background-color: #68b738;
   color: #ffffff;
 }
+
+@media (min-width: 768px) {
+  .goods__card {
+    width: 325px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .goods__card {
+    width: 245px;
+  }
+}
