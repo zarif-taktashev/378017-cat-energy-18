@@ -3,40 +3,84 @@
   font-family: "Oswald", "Arial", sans-serif;
 }
 
+.page-main__slogan-wrapper {
+  width: auto;
+}
+
 .page-main__slogan {
+  padding: 30px 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
-  margin-top: 2px;
+  margin: 0;
 }
 
 .page-main__intro {
   font-size: 14px;
   line-height: 14px;
+  text-transform: uppercase;
   color: #ffffff;
   font-weight: 400;
+  margin: 0;
 }
 
 .page-main__btn {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 16px;
   font-weight: 400;
   background-color: #64a83b;
   color: #ffffff;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px 20px;
+  text-align: center;
 }
 
 .page-main__slogan-wrapper {
   background-color: #64a83b;
   min-height: 480px;
   text-align: center;
+  margin-bottom: 20px;
+  position: relative;
 }
 
 @media (min-width: 768px) {
   .page-main__slogan-wrapper {
+    width: 92%;
+    margin: 0 auto;
+    max-width: 1122px;
     min-height: 870px;
     text-align: left;
+    background-color: #ffffff;
   }
+
+  .page-main__slogan {
+    margin-left: 90px;
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .page-main__intro {
+    margin-left: 90px;
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 50px;
+  }
+
+  .page-main__btn {
+    position: inherit;
+    display: block;
+    margin-left: 90px;
+    width: 245px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
 }
 
 @media (min-width: 1300px) {
@@ -44,4 +88,11 @@
     min-height: 590px;
     text-align: left;
   }
+
+  .page-main__btn,
+  .page-main__intro,
+  .page-main__slogan {
+    margin-left: 85px;
+  }
+
 }

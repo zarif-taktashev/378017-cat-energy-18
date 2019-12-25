@@ -40,21 +40,22 @@ img {
 }
 
 .container {
-  min-width: 320px;
+  width: auto;
   padding: 0 20px;
   margin: 0 auto;
 }
 
 @media (min-width: 738px) {
   .container {
-    min-width: 768px;
+    width: auto;
     padding: 0 30px;
+    max-width: 1300px;
   }
 }
 
 @media (min-width: 1300px) {
   .container {
-    max-width: 1300px;
+    width: auto;
     padding: 0 40px;
   }
 }

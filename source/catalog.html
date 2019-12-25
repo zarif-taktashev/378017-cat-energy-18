@@ -9,28 +9,28 @@
   <body>
     <header class="page-header">
       <h2 class="visually-hidden">Главное меню</h2>
-      <div class="container page-header__wrapper">
+      <div class="page-header__wrapper">
         <a class="page-header__logo">
           <img src="img/logo-mobile.svg" alt="logo-img" class="page-header__logo-image" width="190" height="62">
         </a>
-        <nav class="page-header__nav">
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
           <button class="page-header__toggle" type="button">
             <span class="visually-hidden">Открыть/закрыть</span>
           </button>
           <div class="page-header__menu-wrapper">
             <ul class="page-header__list">
               <li class="page-header__item page-header__item--activ">
-                <a href="#" class="page-header__link">
+                <a href="index.html" class="page-header__link">
                   Главная
                 </a>
               </li>
               <li class="page-header__item">
-                <a href="#" class="page-header__link">
+                <a href="catalog.html" class="page-header__link">
                   Каталог продукции
                 </a>
               </li>
               <li class="page-header__item">
-                <a href="#" class="page-header__link">
+                <a href="form.html" class="page-header__link">
                   Подбор программы
                 </a>
               </li>
@@ -324,5 +324,21 @@
         </a>
       </div>
     </footer>
+    <script>
+      var mainNav = document.querySelector(".page-header__nav");
+      var navToggle = document.querySelector(".page-header__toggle");
+
+      mainNav.classList.remove("page-header__nav--nojs");
+
+      navToggle.addEventListener("click", function() {
+        if (mainNav.classList.contains("page-header__nav--open")) {
+          mainNav.classList.remove("page-header__nav--open");
+          mainNav.classList.add("page-header__nav--closed");
+        } else {
+          mainNav.classList.remove("page-header__nav--closed");
+          mainNav.classList.add("page-header__nav--open");
+        }
+      });
+    </script>
   </body>
 </html>
