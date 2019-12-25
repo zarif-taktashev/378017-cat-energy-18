@@ -2,55 +2,85 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img src="" alt="logo-img" class="page-header__logo-image" width="33" height="38">
-        <img src="" alt="logo-img" class="page-header__cat-logo-image" width="33" height="38">
-      </a>
-      <nav class="page-header__nav main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть/закрыть</span></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--activ">
-              <a href="#" class="site-list__link">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#" class="site-list__link">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <h2 class="visually-hidden">Главное меню</h2>
+      <div class="page-header__wrapper">
+        <a class="page-header__logo">
+          <img src="img/logo-mobile.svg" alt="logo-img" class="page-header__logo-image" width="190" height="62">
+        </a>
+        <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs">
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть/закрыть</span>
+          </button>
+          <div class="page-header__menu-wrapper">
+            <ul class="page-header__list">
+              <li class="page-header__item page-header__item--activ">
+                <a href="index.html" class="page-header__link">
+                  Главная
+                </a>
+              </li>
+              <li class="page-header__item">
+                <a href="catalog.html" class="page-header__link">
+                  Каталог продукции
+                </a>
+              </li>
+              <li class="page-header__item">
+                <a href="form.html" class="page-header__link">
+                  Подбор программы
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </header>
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
+      <div class="container page-footer__contacts">
         <a href="#" class="page-footer__logo">
-          <img src="" alt="лого" class="contacts__img">
+          <img src="img/logo-footer.svg" height="50" width="130" alt="лого" class="page-footer__img">
         </a>
         <ul class="page-footer__socials-list">
           <li class="page-footer__socials-item">
-            <a href="#" aria-label="ВК" class="page-footer__socials-link"></a>
+            <a href="#" class="page-footer__socials-link">
+              <img src="img/icon-vk.svg" width="30" height="17" alt="ВК">
+            </a>
           </li>
           <li class="page-footer__socials-item">
-            <a href="#" aria-label="Инстаграм" class="page-footer__socials-link"></a>
+            <a href="#" class="page-footer__socials-link">
+              <img src="img/icon-insta.svg" width="30" height="17" alt="Инстаграм">
+            </a>
           </li>
           <li class="page-footer__socials-item">
-            <a href="#" aria-label="Фейсбук" class="page-footer__socials-link"></a>
+            <a href="#" class="page-footer__socials-link">
+              <img src="img/icon-fb.svg" width="30" height="17" alt="Фейсбук">
+            </a>
           </li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__copyright">HTML Academy</a>
+        <a href="https://htmlacademy.ru/intensive/adaptive" target="_blank" class="page-footer__copyright">
+          HTML Academy
+        </a>
       </div>
     </footer>
+    <script>
+      var mainNav = document.querySelector(".page-header__nav");
+      var navToggle = document.querySelector(".page-header__toggle");
+
+      mainNav.classList.remove("page-header__nav--nojs");
+
+      navToggle.addEventListener("click", function() {
+        if (mainNav.classList.contains("page-header__nav--open")) {
+          mainNav.classList.remove("page-header__nav--open");
+          mainNav.classList.add("page-header__nav--closed");
+        } else {
+          mainNav.classList.remove("page-header__nav--closed");
+          mainNav.classList.add("page-header__nav--open");
+        }
+      });
+    </script>
   </body>
 </html>

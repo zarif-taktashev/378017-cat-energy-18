@@ -1,0 +1,42 @@
+.goods {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.goods__card {
+  width: 245px;
+}
+
+.goods__header {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
+}
+
+.goods__table {
+  background-color: #f2f2f2;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: "Arial", sans-serif;
+}
+
+.goods__order {
+  background-color: #68b738;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .goods__card {
+    width: 325px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .goods__card {
+    width: 245px;
+  }
+}

@@ -1,0 +1,41 @@
+.products-types {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.products-types__card {
+  background-color: #f2f2f2;
+  width: 100%;
+}
+
+.products-types__header {
+  font-size: 36px;
+  line-height: 37px;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.products-types__link {
+  font-size: 20px;
+  line-height: 20px;
+  color: #111111;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1300px) {
+  .products-types__card {
+    width: 570px;
+
+    &:nth-of-type(1) {
+      margin-right: 80px;
+    }
+  }
+}
